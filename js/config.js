@@ -1,9 +1,10 @@
 const config = {
-  apiBase: "https://quotes.rest/",
+  apiBase: "https://type.fit/",
 
   createRequest(endPoint, method, headers, data) {
     const options = this.createOptions(method, headers, data);
-    return fetch(this.apiBase + endPoint, options);
+    const result = fetch(this.apiBase + endPoint, options);
+    return result;
   },
 
   createOptions(method, headers, data) {
@@ -14,3 +15,4 @@ const config = {
     return options;
   },
 };
+export default config;
