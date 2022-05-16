@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 150px auto;
+  width: 700px;
+  background-color: orangered;
+  border: 2px solid yellowgreen;
+  opacity: 0.6;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
