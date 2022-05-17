@@ -16,21 +16,103 @@ body {
 .container {
   margin: 150px auto;
   width: 800px;
-  opacity: 0.9;
   border-radius: 8px;
   border: 5px solid #fff;
-  padding: 20px;
-  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 40px;
+  box-shadow: 0px 1px 10px 3px rgba(130, 126, 126, 0.3) inset;
 }
-
+/*////////////////
+//     Quote         
+////////////////*/
 .quote {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 70px;
+}
+.quote-text {
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 .quote-text,
 .author-name {
   text-align: center;
   line-height: 1.5;
+}
+
+.author-name {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.quote-holder {
+  position: relative;
+}
+.ph-quotes-bold {
+  position: absolute;
+  left: -13%;
+  top: -40;
+  transform: translate(0%, -40%) rotate(180deg);
+}
+
+/*////////////////
+//     Buttons         
+////////////////*/
+
+.twitter,
+.btnQuote {
+  background-color: #094fdda4;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 5px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 20px;
+  text-align: center;
+}
+.twitter {
+  padding: 4px 20px;
+}
+
+.twitter:hover {
+  background-color: #167dec;
+}
+.btnQuote:hover {
+  background-color: #167dec;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*///////////
+// Spinner Loader
+////////////*/
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
 }
