@@ -11,11 +11,14 @@ function init() {
   displayQuote();
 }
 
-/// Loader
+/**
+ *  Loader
+ */
 const loader = function (quote) {
   if (quote) {
     spinnerEl.classList.remove("hidden");
     innerContainerEl.classList.add("hidden");
+    init();
   } else {
     spinnerEl.classList.add("hidden");
     innerContainerEl.classList.remove("hidden");
@@ -31,20 +34,27 @@ const getQuote = async function () {
 };
 
 const displayQuote = async function () {
-  const quote = await getQuote();
-  if (!quote.quoteText) {
-    loader(true);
-  } else {
+  try {
+    const quote = await getQuote();
+    if (quote.quoteText.length > 50) {
+      quoteElement.classList.add("long-Quote");
+    } else {
+      quoteElement.classList.remove("long-Quote");
+    }
+    innerContainerEl.classList.remove("hidden");
     loader(false);
+    quoteElement.textContent = quote.quoteText;
+    authorEl.textContent = `"${quote.quoteAuthor}"`;
+  } catch (error) {
+    innerContainerEl.classList.add("hidden");
+    loader(true);
   }
-  quoteElement.textContent = quote.quoteText;
-  authorEl.textContent = `"${quote.quoteAuthor}"`;
 };
 
 const sendTweet = function () {
   const quote = quoteElement.textContent;
   const author = authorEl.textContent;
-  let twitterUrl = `href=https://twitter.com/intent/tweet?text=${quote} - ${author}`;
+  let twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
   window.open(twitterUrl, "_blank");
 };
 
