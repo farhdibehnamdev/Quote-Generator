@@ -1,5 +1,6 @@
 const config = {
-  apiBase: "https://type.fit/",
+  // apiBase: "https://type.fit/",
+  apiBase: "https://api.forismatic.com/",
 
   createRequest(endPoint, method, headers, data) {
     const options = this.createOptions(method, headers, data);
