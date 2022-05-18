@@ -1,4 +1,4 @@
-The [Quote Generator](https://farhdibehnamdev.github.io/Qu0te-Generator/) is designed to practice and explore HTML and CSS , JavaScript.
+The [Quote Generator](https://farhdibehnamdev.github.io/Quote-Generator/) is designed to practice and explore HTML and CSS , JavaScript.
 
 The template is a guide meant for you to explore and change to ✨*make it your own*✨
 
@@ -24,15 +24,17 @@ The template is a guide meant for you to explore and change to ✨*make it your 
 
 Users should be able to:
 
--
+- You can generate a new quote by clicking on the "new quote" button.
+- Click on the tweet button to share a quote.
+- If the quote is not ready, users will see a spinner.
 
 ### Screenshot
 
-![](./null.jpg)
+![](./Screenshot.png)
 
 ### Links
 
-- Live Site URL: [Order Summery Card Template](https://farhdibehnamdev.github.io/Quote-Generator/)
+- Live Site URL: [Quote Generator](https://farhdibehnamdev.github.io/Quote-Generator/)
 
 ## My process
 
@@ -40,18 +42,23 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Flexbox
-- Javascript
+- JavaScript
 - Fetch API
 
 ## helpful resources
 
 #### Fonts
 
-- [All Free Fonts](https://www.allfreefonts.co/guanabara-sans-font/)
+- [Google Fonts](https://fonts.google.com/specimen/Roboto)
+
+#### Icons
+
+- [Phosphor Icons](https://phosphoricons.com/)
 
 #### CSS
 
 - [Mozilla Developer Network: Beginners Guide to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
+- [Mozilla Developer Network: JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
 ## Created a masterpiece? 🎨 Share it!
 
